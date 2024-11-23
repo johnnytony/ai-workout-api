@@ -13,7 +13,7 @@ from qdrant_client import QdrantClient
 import numpy as np
 
 
-client = QdrantClient(host="", port=6333)
+client = QdrantClient(host="qdrant", port=6333)
 
 
 client.recreate_collection(
