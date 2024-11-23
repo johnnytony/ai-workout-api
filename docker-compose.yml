@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   app:
+    container_name: api
     build:
       context: . # Use the current directory for building the Docker image
       dockerfile: Dockerfile # Specify the Dockerfile
@@ -14,6 +15,7 @@ services:
     command: uvicorn src.main:app --host 0.0.0.0 --port 8080
 
   qdrant:
+    container_name: qdrant
     image: qdrant/qdrant:v1.5.1 # Specify the Qdrant image version
     restart: always # Ensure the container restarts if it stops
     ports:
