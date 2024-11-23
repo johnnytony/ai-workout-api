@@ -13,6 +13,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 8080
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x docker-entrypoint.sh
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
