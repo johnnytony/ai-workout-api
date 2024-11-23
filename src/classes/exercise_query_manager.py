@@ -2,7 +2,7 @@ from qdrant_client import QdrantClient
 
 
 class ExerciseQueryManager:
-    client = QdrantClient(host="ai-workout-api-qdrant-1", port=6333)
+    client = QdrantClient(host="qdrant", port=6333)
 
     def query(self, query_vector, query_filter):
         return self.client.search(
