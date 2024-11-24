@@ -20,6 +20,10 @@ lower_body = {'Calves', 'Hamstrings', 'Glutes', 'Lower Back', 'Hip Flexors', 'Lo
               'Quadriceps', 'Legs', 'Full Core', 'Full Body', 'Hips'}
 
 
+
+full_body = upper_body | lower_body
+
+
 # Output categorized muscle groups
 print("All Body:", len(muscle_groups))
 print("Upper Body:", len(upper_body))

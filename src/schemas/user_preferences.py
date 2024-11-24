@@ -2,7 +2,7 @@ from typing import Literal
 from pydantic import BaseModel
 
 class UserPreferences(BaseModel):
-    muscle_group: Literal['upper_body', 'lower_body']
+    muscle_group: Literal['upper_body', 'lower_body', 'full_body']
     fitness_level: Literal['Beginner', 'Intermediate', 'Advanced']
     
     class Config:
