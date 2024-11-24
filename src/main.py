@@ -47,7 +47,7 @@ def generate_workout(muscle_group: str, fitness_level: str):
     muscle_options = {
         'upper_body': configs.upper_body,
         'lower_body': configs.lower_body,
-        'full_body': configs.upper_body + configs.lower_body
+        'full_body': configs.full_body
     }
 
     muscle_group = list(muscle_options.get(user_preferences.muscle_group))
