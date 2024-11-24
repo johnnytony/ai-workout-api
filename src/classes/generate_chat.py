@@ -27,7 +27,7 @@ class ConverseModel:
         task_instructions = """
             You are a Workout Specialist and you are going to organize a training plan into 3 different days, based on the a list of exercises I am sending.
             Organize the following exercises into a JSON structure containing the workout plan.
-            You have a max of 5 exercises per day.
+            You have a min of 3 exercises and a max of 5 exercises per day.
             Don't mix exercises with chest and back, or leg and chest or back and leg.
             I just want you to return something like this in JSON format without any other content.
             [
